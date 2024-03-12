@@ -1,1 +1,1 @@
-web: gunicorn UskBowmen.wsgi
+web: gunicorn uskbowmen.wsgi
