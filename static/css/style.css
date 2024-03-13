@@ -5,3 +5,7 @@ h1 {
 body {
     padding-top: 45px;  /* Padding pushes content down so it is not hidden by navbar */
 }
+
+nav.navbar {
+    background-color: #384B30; /* Set the background color */
+}
