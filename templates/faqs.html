@@ -5,4 +5,11 @@
 
     <h1>FAQs</h1>
 
+    {% for faq in faqs %}
+        <div>
+            <h3>{{ faq.question }}</h3>
+            <p>{{ faq.answer }}</p>
+        </div>
+    {% endfor %}
+
 {% endblock %}

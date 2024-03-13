@@ -1,3 +1,7 @@
 h1 {
     color: red;
 }
+
+body {
+    padding-top: 70px;  /* Padding pushes content down so it is not hidden by navbar */
+}
