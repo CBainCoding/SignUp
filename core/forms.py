@@ -40,3 +40,13 @@ class SignupForm(UserCreationForm):
     experience = forms.ChoiceField(choices=experience_choices, widget=forms.Select(attrs={
         "class": "form-select mb-3"
     }))
+
+class LoginForm(AuthenticationForm):
+    username = forms.CharField(widget=forms.TextInput(attrs={
+        "placeholder": "Your username",
+        "class": "form-control mb-3"
+    }))
+    password = forms.CharField(widget=forms.PasswordInput(attrs={
+        "placeholder": "Enter password",
+        "class": "form-control mb-3"
+    }))

@@ -41,14 +41,18 @@
                   <li><a href="{% url 'faqs:faqs_page' %}">FAQs</a></li>
                   <li><a href="#">Contact</a></li>
               </ul>
+
+              {% if request.user.is_authenticated %}
+              {% else %}
               <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login/Signup<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Login</a></li>
+                        <li><a href="{% url 'core:login' %}">Login</a></li>
                         <li><a href="{% url 'core:signup' %}">Create Account</a></li>
                     </ul>
               </ul>
+              {% endif %}
           </div>
       </div>
   </nav>
