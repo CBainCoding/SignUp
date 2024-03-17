@@ -10,5 +10,9 @@ class UserProfile(models.Model):
         ('experienced', 'Experienced'),
     ))
 
+    #Change "User Profiles" to "Member Details" in admin panel
+    class Meta:
+        verbose_name_plural = "Member Details"
+
     def __str__(self):
         return self.user.username
