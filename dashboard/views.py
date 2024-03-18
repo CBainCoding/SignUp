@@ -1,6 +1,8 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .models import UserProfile
+from .forms import UserEditForm, UserProfileEditForm
 
 # Create your views here.
 
@@ -22,7 +24,8 @@ def edit_user(request):
         if user_form.is_valid() and profile_form.is_valid():
             user_form.save()
             profile_form.save()
-            return redirect('account_page')  # Redirect to the account page or wherever appropriate
+            messages.success(request, 'Your profile has been updated successfully!')
+            return redirect('dashboard:account_page')
     else:
         user_form = UserEditForm(instance=request.user)
         profile_form = UserProfileEditForm(instance=request.user.userprofile)
