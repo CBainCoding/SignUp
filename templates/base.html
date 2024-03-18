@@ -44,7 +44,7 @@
 
               {% if request.user.is_authenticated %}
                <ul class="nav navbar-nav">
-                   <li><a href="#">My Account</a></li>
+                   <li><a href="{% url 'dashboard:account_page' %}">My Account</a></li>
                </ul>
               {% else %}
               <ul class="nav navbar-nav navbar-right">
