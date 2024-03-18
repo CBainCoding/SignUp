@@ -32,10 +32,7 @@ class SignupForm(UserCreationForm):
         "placeholder": "Confirm password",
         "class": "form-control mb-3"
     }))
-    experience = forms.ChoiceField(choices=experience_choices, widget=forms.Select(attrs={
-        "class": "form-select mb-3"
-    }))
-
+    
     class Meta:
         model = User
         fields = ("username", "email", "password1", "password2", "first_name", "last_name", "experience")
