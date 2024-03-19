@@ -1,3 +1,4 @@
+from django.contrib.auth import views as auth_views
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib import messages
@@ -6,6 +7,7 @@ from .forms import UserEditForm, UserProfileEditForm
 
 # Create your views here.
 
+# Account Page view
 @login_required
 def account_page(request):
     user_profile = UserProfile.objects.get(user=request.user)
@@ -15,6 +17,7 @@ def account_page(request):
     }
     return render(request, 'account_page.html', context)
 
+# Edit account info form
 @login_required
 def edit_user(request):
     if request.method == 'POST':
