@@ -4,6 +4,8 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import UserProfile
 from .forms import UserEditForm, UserProfileEditForm
+from django.contrib.auth import logout
+from django.contrib.auth.models import User
 
 # Create your views here.
 
@@ -34,3 +36,15 @@ def edit_user(request):
         profile_form = UserProfileEditForm(instance=request.user.userprofile)
     
     return render(request, 'edit_account.html', {'user_form': user_form, 'profile_form': profile_form})
+
+# Delete account view
+@login_required
+def delete_user(request):
+    if request.method == 'POST':
+        user = request.user
+        user.delete()
+        logout(request)
+        messages.success(request, 'Your account has been deleted successfully.')
+        return redirect('/')
+    else:
+        return render(request, 'confirm_delete.html')
