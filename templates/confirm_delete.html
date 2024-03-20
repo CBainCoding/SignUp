@@ -2,13 +2,13 @@
 
 {% block content %}
     <h2>Confirm Account Deletion</h2>
-    <p>Are you sure you want to delete your account? This action cannot be undone. 
+    <p>Are you sure you want to delete your account? This action cannot be undone. <br>
         If you would like to edit your account details this can be done on your account page. 
         Simply click the "My Account" button above</p>
 
     <form method="post">
         {% csrf_token %}
-        <button type="submit">Confirm Delete</button>
-        <a href="{% url 'dashboard:account_page' %}">Cancel</a>
+        <button type="submit" class="btn btn-danger">Confirm Delete</button>
+        <a class="btn btn-primary" href="{% url 'dashboard:account_page' %}" role="button">Cancel</a>
     </form>
 {% endblock %}

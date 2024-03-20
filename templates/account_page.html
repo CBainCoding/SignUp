@@ -19,6 +19,7 @@
     <p>Last Name: {{ user.last_name }}</p>
     <p>Experience: {{ user_profile.experience }}</p>
 
-    <a href="{% url 'dashboard:edit_user' %}">Edit Details</a>
+    <button type="button" class="btn btn-secondary"><a href="{% url 'dashboard:edit_user' %}">Edit Details</a></button>
+    <a href="{% url 'dashboard:delete_user' %}" class="btn btn-danger">Delete Account</a>
 
 {% endblock %}
