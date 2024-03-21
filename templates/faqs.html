@@ -3,13 +3,21 @@
 
 {% block content %}
 
-    <h1>FAQs</h1>
+<h1>FAQs</h1>
 
-    {% for faq in faqs %}
-        <div>
-            <h3>{{ faq.question }}</h3>
-            <p>{{ faq.answer }}</p>
-        </div>
-    {% endfor %}
+{% if user.is_staff %}
+    <a href="{% url 'faqs:faq_create' %}">Add FAQ</a>
+{% endif %}
+
+{% for faq in faqs %}
+    <div>
+        <h3>{{ faq.question }}</h3>
+        <p>{{ faq.answer }}</p>
+        {% if user.is_staff %}
+            <a href="{% url 'faqs:faq_edit' faq.id %}">Edit</a>
+            <a href="{% url 'faqs:faq_delete' faq.id %}">Delete</a>
+        {% endif %}
+    </div>
+{% endfor %}
 
 {% endblock %}
