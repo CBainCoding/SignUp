@@ -10,11 +10,30 @@
             {% endfor %}
     {% endif %}
 
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Usk Bowmen</h1>
+          <p class="lead text-muted">Usk Bowmen is an archery club based in Usk, South Wales. 
+            We meet regularly at our local Scout Hut, 
+            during the winter months we shoot indoors on a short 10m range 
+            and in the summer months we shoot outside at roughly 20m.</p>
+          <p>
+            <!-- Jumbotron buttons with if loop depending on if user is logged in -->
+            
+            <a href="{% url 'faqs:faqs_page' %}" class="btn btn-success my-2">FAQs</a>
+            
+            {% if request.user.is_authenticated %}
 
-    <div class="flex-container">
-        <div class="content">
-            <h2>Homepage</h2>
-            <p>Usk Bowmen is an archery club based in Usk, South Wales. We meet regularly at our local Scout Hut, during the winter months we shoot indoors on a short 10m range and in the summer months we shoot outside at roughly 20m.</p>
+            <a href="{% url 'dashboard:account_page' %}" class="btn btn-primary my-2">My Account</a>
+            <a href="{% url 'dashboard:logout' %}" class="btn btn-danger my-2">Log out</a>
+
+            {% else %}
+
+            <a href="{% url 'core:signup' %}" class="btn btn-primary my-2">Create Account</a>
+            <a href="{% url 'core:login' %}" class="btn btn-info my-2">Login</a>
+
+            {% endif %}
+         </p>
         </div>
-    </div>
+      </section>
 {% endblock %}
