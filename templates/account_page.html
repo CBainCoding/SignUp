@@ -3,12 +3,6 @@
 
 {% block content %}
 
-<!-- Display alert messages to user -->
-{% if messages %}
-        {% for message in messages %}
-            <div class="alert alert-{{ message.tags }}">{{ message }}</div>
-        {% endfor %}
-{% endif %}
     <div>
         <h1>{{ user.username }} - Account Page</h1>
 
