@@ -19,9 +19,9 @@ body {
 
 .readable {
         background-color: rgba(255, 255, 255, 0.85); /* White background with some opacity */
-        border-radius: 0.25rem; /* Bootstrap's default border-radius for rounded corners */
-        padding: 1rem; /* Add some padding */
-        margin-bottom: 1rem; /* Space between elements */
+        border-radius: 0.25rem; /* Rounded corners */
+        padding: 1rem;
+        margin-bottom: 1rem;
 }
 
 
