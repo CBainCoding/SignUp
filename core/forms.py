@@ -9,11 +9,11 @@ class SignupForm(UserCreationForm):
     last_name = forms.CharField(max_length=30, required=True)
 
     experience_choices = (
-        ('beginner', 'Beginner'),
-        ('experienced', 'Experienced'),
-    )
-    experience = forms.ChoiceField(choices=experience_choices, widget=forms.Select(attrs={
-        "class": "form-select mb-3"
+        ('beginner', 'Beginner - Little to no experience with archery'),
+    ('experienced', 'Experienced - Has completed a basic competency certificate.'),
+)
+    experience = forms.ChoiceField(choices=experience_choices, widget=forms.RadioSelect(attrs={
+        "class": "form-check-input"
     }))
 
     username = forms.CharField(widget=forms.TextInput(attrs={
