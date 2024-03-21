@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+    <div class="container">
+        <!-- If loop should show "Edit" or "Add New" depending on which was clicked -->
+        <h2>{% if object %}Edit FAQ{% else %}Add New FAQ{% endif %}</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="{% url 'faqs:faqs_page' %}" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+
+
+{% endblock %}
