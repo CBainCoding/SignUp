@@ -17,6 +17,13 @@ body {
     z-index: -1; /* Keep the background behind other content */
 }
 
+.readable {
+        background-color: rgba(255, 255, 255, 0.85); /* White background with some opacity */
+        border-radius: 0.25rem; /* Bootstrap's default border-radius for rounded corners */
+        padding: 1rem; /* Add some padding */
+        margin-bottom: 1rem; /* Space between elements */
+}
+
 
 nav.navbar {
     background-color: #384B30; /* Set the background color */

@@ -3,21 +3,22 @@
 
 {% block content %}
 
-<h1>FAQs</h1>
+<div class="container rounded mt-4 p-3 readable">
+    <h1>FAQs</h1>
 
-{% if user.is_staff %}
-    <a href="{% url 'faqs:faq_create' %}">Add FAQ</a>
-{% endif %}
+    {% if user.is_staff %}
+        <a href="{% url 'faqs:faq_create' %}" class="btn btn-primary">Add FAQ</a>
+    {% endif %}
 
-{% for faq in faqs %}
-    <div>
-        <h3>{{ faq.question }}</h3>
-        <p>{{ faq.answer }}</p>
-        {% if user.is_staff %}
-            <a href="{% url 'faqs:faq_edit' faq.id %}">Edit</a>
-            <a href="{% url 'faqs:faq_delete' faq.id %}">Delete</a>
-        {% endif %}
-    </div>
-{% endfor %}
-
+    {% for faq in faqs %}
+        <div class="mb-3 p-2 bg-white rounded">
+            <h3>{{ faq.question }}</h3>
+            <p>{{ faq.answer }}</p>
+            {% if user.is_staff %}
+                <a href="{% url 'faqs:faq_edit' faq.id %}" class="btn btn-secondary">Edit</a>
+                <a href="{% url 'faqs:faq_delete' faq.id %}" class="btn btn-danger">Delete</a>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
 {% endblock %}
