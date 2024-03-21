@@ -44,7 +44,7 @@ def delete_user(request):
         user = request.user
         user.delete()
         logout(request)
-        messages.success(request, 'Your account has been deleted successfully.')
+        messages.warning(request, 'Your account has been deleted successfully.')
         return redirect('/')
     else:
         return render(request, 'confirm_delete.html')
