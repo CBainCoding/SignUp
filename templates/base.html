@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usk Bowmen</title>
     <link rel="icon" type="image/x-icon" href="static/media/target.png">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    
-    
+       
     <!-- Bootstrap links -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -18,9 +16,16 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 
 </head>
 <body>
+
+    <!-- Background image -->
+    <div class="background-image-container"></div>
+
     <!-- Navbar starts -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -61,6 +66,8 @@
       </div>
   </nav>
     <!-- Navbar ends -->
+
+    
     {% block content %}
     {% endblock %}
     <script src="{% static 'js/script.js' %}"></script>

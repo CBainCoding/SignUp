@@ -1,10 +1,22 @@
-h1 {
-    color: red;
-}
-
 body {
     padding-top: 45px;  /* Padding pushes content down so it is not hidden by navbar */
+    
 }
+
+.background-image-container {
+    position: fixed; /* Use fixed or absolute positioning */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Cover the full viewport width */
+    height: 100vh; /* Cover the full viewport height */
+    background-image: url('../media/backgroundimage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px); /* Adjust the blur intensity as needed */
+    z-index: -1; /* Keep the background behind other content */
+}
+
 
 nav.navbar {
     background-color: #384B30; /* Set the background color */
