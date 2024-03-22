@@ -3,7 +3,14 @@ This is a website designed for users to be able to sign up with an account that 
 
 - List of features
 
+Navbar 
+FAQs
+Contact
+User Accounts
+
 - UX/UI
+
+
 
 - Testing
 
@@ -16,3 +23,5 @@ All forms have been tested and create relevent instances in the back-end. For us
 - Future features 
 
 - Known Bugs
+Delete FAQ message not showing when a user deletes from the front-end. For some reason while the messages work when creating and editing the FAQs page, the delete message does not show.
+Same email address is allowed on multiple accounts when signing up. This can be solved but was left as it is for users signing up as some club members may sign themselves and their children up on different accounts
