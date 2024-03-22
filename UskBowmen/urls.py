@@ -23,4 +23,5 @@ urlpatterns = [
     path('faqs/', include(('faqs.urls', 'faqs'), namespace='faqs')),
     path('accounts/', include('allauth.urls')),
     path('', include(('dashboard.urls', 'dashboard'), namespace='dashboard')),
+    path('faqs/', include(('faqs.urls', 'faqs'), namespace='faqs')),
 ]

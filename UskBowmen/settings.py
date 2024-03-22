@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "core",
     "faqs",
     "dashboard",
+    "enquiries",
 ]
 
 SITE_ID = 1
