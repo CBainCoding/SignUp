@@ -11,7 +11,7 @@
         <p>Email: {{ user.email }}</p>
         <p>First Name: {{ user.first_name }}</p>
         <p>Last Name: {{ user.last_name }}</p>
-        <p>Experience: {{ user_profile.experience }}</p>
+        <p>Experience: {{ user_profile.experience|capfirst }}</p>
 
         <button type="button" class="btn btn-secondary"><a href="{% url 'dashboard:edit_user' %}">Edit Details</a></button>
         <a href="{% url 'dashboard:delete_user' %}" class="btn btn-danger">Delete Account</a>
