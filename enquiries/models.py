@@ -8,4 +8,4 @@ class Enquiry(models.Model):
     message = models.TextField()
 
     def __str__(self):
-        return f"Enquiry by {self.user.username}"
+        return f"Enquiry from {self.user.username}"
