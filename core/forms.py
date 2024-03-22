@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from dashboard.models import UserProfile
 
+
 class SignupForm(UserCreationForm):
     # Custom fields for experience
     first_name = forms.CharField(max_length=30, required=True)
@@ -10,11 +11,13 @@ class SignupForm(UserCreationForm):
 
     experience_choices = (
         ('beginner', 'Beginner - Little to no experience with archery'),
-    ('experienced', 'Experienced - Has completed a basic competency certificate.'),
-)
-    experience = forms.ChoiceField(choices=experience_choices, widget=forms.RadioSelect(attrs={
-        "class": "form-check-input"
-    }))
+        ('experienced',
+            'Experienced - Has completed a basic competency certificate.'),
+    )
+    experience = forms.ChoiceField(choices=experience_choices,
+                                   widget=forms.RadioSelect(attrs={
+                                    "class": "form-check-input"
+                                    }))
 
     username = forms.CharField(widget=forms.TextInput(attrs={
         "placeholder": "Your username",
@@ -32,10 +35,11 @@ class SignupForm(UserCreationForm):
         "placeholder": "Confirm password",
         "class": "form-control mb-3"
     }))
-    
+
     class Meta:
         model = User
-        fields = ("username", "email", "password1", "password2", "first_name", "last_name", "experience")
+        fields = ("username", "email", "password1", "password2",
+                  "first_name", "last_name", "experience")
 
     def save(self, commit=True):
         user = super(SignupForm, self).save(commit=False)
@@ -48,7 +52,9 @@ class SignupForm(UserCreationForm):
             user_profile.save()
         return user
 
+
 class LoginForm(AuthenticationForm):
+
     username = forms.CharField(widget=forms.TextInput(attrs={
         "placeholder": "Your username",
         "class": "form-control mb-3"
