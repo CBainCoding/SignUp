@@ -13,10 +13,10 @@ def submit_enquiry(request):
             enquiry = form.save(commit=False)
             enquiry.user = request.user
             enquiry.save()
-            return redirect('success')
+            return redirect('enquiries:success')
     else:
         form = EnquiryForm()
-    return render(request, 'enquiry.html', {'form': form})
+    return render(request, 'enquiries/enquiry.html', {'form': form})
 
-    def enquiry_success(request):
-        return render(request, 'success.html')
+def enquiry_success(request):
+    return render(request, 'enquiries/success.html')
