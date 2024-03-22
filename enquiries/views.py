@@ -18,5 +18,6 @@ def submit_enquiry(request):
         form = EnquiryForm()
     return render(request, 'enquiries/enquiry.html', {'form': form})
 
+
 def enquiry_success(request):
     return render(request, 'enquiries/success.html')
