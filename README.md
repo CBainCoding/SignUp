@@ -7,6 +7,8 @@ This is a website designed for users to be able to sign up with an account that 
 
 - Testing
 
+All forms have been tested and create relevent instances in the back-end. For users they can see their account through the front-end "My Account" page, staff level users can also add new FAQs to the FAQs page, as well as editing and deleting from the front-end.
+
 - Deployment
 
 - Citation of ALL sources(code, images, text)
