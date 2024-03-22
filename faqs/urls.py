@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import faqs_page, FAQCreateView, FAQUpdateView, FAQDeleteView
 
+
 urlpatterns = [
     path('', faqs_page, name='faqs_page'),
     path('create/', FAQCreateView.as_view(), name='faq_create'),
