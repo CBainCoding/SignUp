@@ -27,6 +27,12 @@ body {
 
 nav.navbar {
     background-color: #384B30; /* Set the background color */
+    
+}
+
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-brand {
+    color: rgba(255, 255, 255, 0.815);
 }
 
 @media (min-width: 768px) {
