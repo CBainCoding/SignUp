@@ -56,7 +56,11 @@ The initial purpose of the site was to act as a store for club officers to have 
 
 <h3>UX/UI</h3>
 
-
+- Colour selected for Navbar is a dark "forest" green to highlight the outdoors aspect of the sport, as well as evoking images of famous archers such as Robin Hood in Sherwood Forest
+- Off-White was used as text in the navbar after user testing found the previous colour difficult to read
+- Similar white background was added to most features as the background image that is used (featuring traditional archery equipment again to evoke images of historical archers) made text difficult to read. A container with a transparent white background allows the image to be seen while still allowing users to read the text on top.
+- Bootstrap buttons have been used for most on-page buttons as this gave an easy way to change colours and highlight "dangerous" buttons such as deleting FAQs or user accounts.
+- Simple favicon featuring an archery target and an arrow hitting bullseye improves the site design and ensures users with a lot of tabs open can still see what the site is for. Favicon is coded in to the base.html so it is consistent across the site.
 
 <h3>Testing</h3>
 
