@@ -147,9 +147,11 @@ This may take a few minutes to deploy, when complete click the "Open app" button
 - All text content on the site was written by the developer
 
 <h3>Future features </h3>
-    - Currently the club staff have no way to access the enquiries unless given permission by the admin/superuser. I would like to add an "inbox" page that displays the enquiries in a front-end page so that staff do not need to access the admin panel.
-    - Similar to the enquiries, I intend to add a "Member details" page which allows staff to see a list of members and their details, if possible also export these details in a CSV file as the intention is that they can then be submitted to the national governing body to register the club members.
+
+- Currently the club staff have no way to access the enquiries unless given permission by the admin/superuser. I would like to add an "inbox" page that displays the enquiries in a front-end page so that staff do not need to access the admin panel.
+- Similar to the enquiries, I intend to add a "Member details" page which allows staff to see a list of members and their details, if possible also export these details in a CSV file as the intention is that they can then be submitted to the national governing body to register the club members.
 
 <h3>Known Bugs</h3>
-Delete FAQ message not showing when a user deletes from the front-end. For some reason while the messages work when creating and editing the FAQs page, the delete message does not show.
-Same email address is allowed on multiple accounts when signing up. This can be solved but was left as it is for users signing up as some club members may sign themselves and their children up on different accounts
+
+- Delete FAQ message not showing when a user deletes from the front-end. For some reason while the messages work when creating and editing the FAQs page, the delete message does not show.
+- Same email address is allowed on multiple accounts when signing up. This can be solved but was left as it is for users signing up as some club members may sign themselves and their children up on different accounts
