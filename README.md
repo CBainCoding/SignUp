@@ -119,7 +119,7 @@ CSS stylesheet has passed the official [Jigsaw CSS validator](https://jigsaw.w3.
 
 All modified .py files have been run through the [Code Institute linter](https://pep8ci.herokuapp.com/). A lot of the code did not confirm to PEP8 standards so was reformatted correctly to meet these requirements and now passes with no errors.
 
-All site pages and forms have been tested on multiple devices from large desktop monitors to mobile phones. The pages and forms aldisplay correctly. Styling could be improved on some forms such as the enquiry form but this was pushed to a "Should do" requirement as the current styling meets MVP requirements.
+All site pages and forms have been tested on multiple devices from large desktop monitors to mobile phones. The pages and forms all display correctly. Styling could be improved on some forms such as the enquiry form but this was pushed to a "Should do" requirement as the current styling meets MVP requirements.
 
 <h3>Deployment</h3>
 
