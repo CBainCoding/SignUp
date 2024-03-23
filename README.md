@@ -74,11 +74,21 @@ Please click [here]() to view the live site deployed on Heroku.
 - Bootstrap buttons have been used for most on-page buttons as this gave an easy way to change colours and highlight "dangerous" buttons such as deleting FAQs or user accounts.
 - Simple favicon featuring an archery target and an arrow hitting bullseye improves the site design and ensures users with a lot of tabs open can still see what the site is for. Favicon is coded in to the base.html so it is consistent across the site.
 
+__Wireframes__
+![Wireframe_FrontPage](static/media/readme_images/WireframeFrontPage.webp)
+![Wireframe_Enquiries](static/media/readme_images/WireframeEnquiry.webp)
+![Wireframe_Signup](static/media/readme_images/WireframeSignup.webp)
+![Wireframe_FAQs](static/media/readme_images/WireframeFAQs.webp)
+
 <h3>Testing</h3>
 
 All pages forms have been tested and create relevent instances in the back-end. For users they can see their account through the front-end "My Account" page, staff level users can also add new FAQs to the FAQs page, as well as editing and deleting from the front-end. One bug that was found was during the "Delete Account" process the message to confirm account deletion does not display while the create and edit messages do. This requires futher investigation.
 
 All html pages have been run through the official [W3C validator](https://validator.w3.org/). This was done by right clicking on each page and viewing source, then pasting into the validator. All pages have been tested both not logged in and logged in. For pages such as the FAQs where staff can see additional features, an additional test was performed with a staff account logged in.
+
+Lighthouse tests have been performed across the site and results are over 90 for each score.
+</br>
+![Lighthouse_Results](static/media/readme_images/Lighthouse.png)
 
 CSS stylesheet has passed the official [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/) with no errors.
 <p>
@@ -99,13 +109,15 @@ All site pages and forms have been tested on multiple devices from large desktop
 
 <h3>Citation of ALL sources(code, images, text)</h3>
 
+FreeCodeCamp's [Python Tutorial for Beginners](https://www.youtube.com/watch?v=ZxMB6Njs3ck)
 Chat GPT - General assistance with debugging and structuring code
 Django Documentation - General assistance
 W3 Schools - General help with structuring code and debugging
 Bootstrap Documentation
-geograph.org and Peter Trimming for background image - https://www.geograph.org.uk/photo/1983853
+geograph.org and Peter Trimming for [background image](https://www.geograph.org.uk/photo/1983853)
 Code Institute staff and tutors who taught me and helped with debugging issues
 My mentor for helping plan, check in and reviewing the project once complete
+All text content on the site was written by the developer
 
 <h3>Future features </h3>
     - Currently the club staff have no way to access the enquiries unless given permission by the admin/superuser. I would like to add an "inbox" page that displays the enquiries in a front-end page so that staff do not need to access the admin panel.
