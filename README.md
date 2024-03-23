@@ -11,12 +11,12 @@ The initial purpose of the site was to act as a store for club officers to have 
     - The Navbar is part of the base.html file and as all other html files extend this base.html, the Navbar remains consistent across the site.
     - On smaller devices the Navbar collapses and can be opened with the burger icon and continues the difference in links shows depending on whether the user is logged in
     </br>
-    ![Navbar](static/media/readme_images/Navbar.png)
-    </br>
-    ![Navbar](static/media/readme_images/NavbarLoggedIn.png)
-    </br>
-    ![Navbar_Collapsed](static/media/readme_images/NavbarCollapsed.png)
-    ![Navbar_Collapsed](static/media/readme_images/NavbarCollapsedLoggedIn.png)
+![Navbar](static/media/readme_images/Navbar.png)
+</br>
+![Navbar](static/media/readme_images/NavbarLoggedIn.png)
+</br>
+![Navbar_Collapsed](static/media/readme_images/NavbarCollapsed.png)
+![Navbar_Collapsed](static/media/readme_images/NavbarCollapsedLoggedIn.png)
 
 - __FAQs__
     - The FAQs page allows users to see commonly asked questions about the club without the need to bother the club officers.
@@ -24,10 +24,10 @@ The initial purpose of the site was to act as a store for club officers to have 
     - Django messaging system used to confirm new and edited FAQs. During testing the "Delete" message does not appear which requires further investigation.
     - Confirmation page for deleting FAQs to try and avoid accidental deletions.
     </br>
-    ![FAQs_Page](static/media/readme_images/FAQs_page.png)
-    ![Staff_FAQs](static/media/readme_images/Staff_FAQs.png)
-    ![FAQs_Messages](static/media/readme_images/Edit_FAQ_Message.png)
-    ![Delete_FAQ_Confirm](static/media/readme_images/Delete_FAQ_confirmation.png)
+![FAQs_Page](static/media/readme_images/FAQs_page.png)
+![Staff_FAQs](static/media/readme_images/Staff_FAQs.png)
+![FAQs_Messages](static/media/readme_images/Edit_FAQ_Message.png)
+![Delete_FAQ_Confirm](static/media/readme_images/Delete_FAQ_confirmation.png)
 
 
 - __Contact__
