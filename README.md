@@ -3,6 +3,22 @@ This is a website designed for users to be able to sign up with an account that 
 
 The initial purpose of the site was to act as a store for club officers to have access to member details, with the members able to edit details themselves rather than requiring the club officers to update. During testing several users felt that the creating account process did not deliver any real benefit to them and so the "Enquiries" app was added to give logged in users a way to message the club admins.
 
+<h3>Live site</h3>
+
+Please click [here]() to view the live site deployed on Heroku.
+
+<h3>Technologies used</h3>
+
+- __Languages__
+    - This is a full stack project using HTML, CSS and Python. 
+
+- __Frameworks__
+    - The site uses Django and Bootstrap. 
+        - Django is used for the back-end structuring the project and because of the features it offers "out of the box" such as the user login and admin panel
+        - Bootstrap is used for simplifying CSS styling allowing for much less CSS code in the stylesheet
+
+    - JavaScript file exists but currently only performs a simply "Hello world" print to check the JavaScript file is wired up correctly. During the project it became apparent that Python and Django were able to offer the same functionality but much more efficiently.
+
 <h3>List of features</h3>
 
 - __Navbar__
@@ -50,10 +66,6 @@ The initial purpose of the site was to act as a store for club officers to have 
 ![Edit_Account](static/media/readme_images/Edit_Account.png)
 ![Confirm_Delete_Account](static/media/readme_images/Confirm_Delete_Account.png)
 
-- __Future features__
-    - Currently the club staff have no way to access the enquiries unless given permission by the admin/superuser. I would like to add an "inbox" page that displays the enquiries in a front-end page so that staff do not need to access the admin panel.
-    - Similar to the enquiries, I intend to add a "Member details" page which allows staff to see a list of members and their details, if possible also export these details in a CSV file as the intention is that they can then be submitted to the national governing body to register the club members.
-
 <h3>UX/UI</h3>
 
 - Colour selected for Navbar is a dark "forest" green to highlight the outdoors aspect of the sport, as well as evoking images of famous archers such as Robin Hood in Sherwood Forest
@@ -83,9 +95,21 @@ All site pages and forms have been tested on multiple devices from large desktop
 
 <h3>Deployment</h3>
 
+
+
 <h3>Citation of ALL sources(code, images, text)</h3>
 
+Chat GPT - General assistance with debugging and structuring code
+Django Documentation - General assistance
+W3 Schools - General help with structuring code and debugging
+Bootstrap Documentation
+geograph.org and Peter Trimming for background image - https://www.geograph.org.uk/photo/1983853
+Code Institute staff and tutors who taught me and helped with debugging issues
+My mentor for helping plan, check in and reviewing the project once complete
+
 <h3>Future features </h3>
+    - Currently the club staff have no way to access the enquiries unless given permission by the admin/superuser. I would like to add an "inbox" page that displays the enquiries in a front-end page so that staff do not need to access the admin panel.
+    - Similar to the enquiries, I intend to add a "Member details" page which allows staff to see a list of members and their details, if possible also export these details in a CSV file as the intention is that they can then be submitted to the national governing body to register the club members.
 
 <h3>Known Bugs</h3>
 Delete FAQ message not showing when a user deletes from the front-end. For some reason while the messages work when creating and editing the FAQs page, the delete message does not show.
