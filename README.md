@@ -13,7 +13,7 @@ The initial purpose of the site was to act as a store for club officers to have 
     </br>
 ![Navbar](static/media/readme_images/Navbar.png)
 </br>
-![Navbar](static/media/readme_images/NavbarLoggedIn.png)
+![NavbarLoggedIn](static/media/readme_images/NavbarLoggedIn.png)
 </br>
 ![Navbar_Collapsed](static/media/readme_images/NavbarCollapsed.png)
 ![Navbar_Collapsed](static/media/readme_images/NavbarCollapsedLoggedIn.png)
@@ -31,10 +31,28 @@ The initial purpose of the site was to act as a store for club officers to have 
 
 
 - __Contact__
+    - Contact page was initially planned as a signup form but was changed during development as users already put in their details when signing up.
+    - Features a simply text field and submit button, enquiries can be seen in the admin panel.
+    - Future plan is to add an "inbox" page that only staff can access which displays these enquiries in a front-end page.
+    </br>
+![Contact_Form](static/media/readme_images/EnquiryForm.png)
+![Contact_Confirmation](static/media/readme_images/EnquiryConfirmation.png)
+
 - __User Accounts__
+    - Users can create an account which saves their details to the back-end. The purpose of this is to give club staff an online repository of club members and their details.
+    - Users can edit their account through a front-end form.
+    - Users can delete their acount through a front-end form.
+    - Django messaging used for editing and deleting account confirmation.
+    - Django verification used to check required fields filled in and filled in correctly e.g. ensuring email is correct format, passwords match and are not too similar to username
+    </br>
+![Create_Account](static/media/readme_images/Create_Account.png)
+![Account_Page](static/media/readme_images/Account_Page.png)
+![Edit_Account](static/media/readme_images/Edit_Account.png)
+![Confirm_Delete_Account](static/media/readme_images/Confirm_Delete_Account.png)
 
 - __Future features__
 - Currently the club staff have no way to access the enquiries unless given permission by the admin/superuser. I would like to add an "inbox" page that displays the enquiries in a front-end page so that staff do not need to access the admin panel.
+- Similar to the enquiries, I intend to add a "Member details" page which allows staff to see a list of members and their details, if possible also export these details in a CSV file as the intention is that they can then be submitted to the national governing body to register the club members.
 
 <h3>UX/UI</h3>
 
