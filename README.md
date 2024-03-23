@@ -7,6 +7,12 @@ The initial purpose of the site was to act as a store for club officers to have 
 
 Please click [here]() to view the live site deployed on Heroku.
 
+<h3>Database model</h3>
+
+The database model below shows the relation between the different models used in the site.
+
+![database_model](static/media/readme_images/DatabaseModel.png)
+
 <h3>Technologies used</h3>
 
 - __Languages__
