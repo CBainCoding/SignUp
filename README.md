@@ -136,15 +136,15 @@ This may take a few minutes to deploy, when complete click the "Open app" button
 
 <h3>Citation of ALL sources(code, images, text)</h3>
 
-FreeCodeCamp's [Python Tutorial for Beginners](https://www.youtube.com/watch?v=ZxMB6Njs3ck)
-Chat GPT - General assistance with debugging and structuring code
-Django Documentation - General assistance
-W3 Schools - General help with structuring code and debugging
-Bootstrap Documentation
-geograph.org and Peter Trimming for [background image](https://www.geograph.org.uk/photo/1983853)
-Code Institute staff and tutors who taught me and helped with debugging issues
-My mentor for helping plan, check in and reviewing the project once complete
-All text content on the site was written by the developer
+- FreeCodeCamp's [Python Tutorial for Beginners](https://www.youtube.com/watch?v=ZxMB6Njs3ck)
+- Chat GPT - General assistance with debugging and structuring code
+- Django Documentation - General assistance
+- W3 Schools - General help with structuring code and debugging
+- Bootstrap Documentation
+- geograph.org and Peter Trimming for [background image](https://www.geograph.org.uk/photo/1983853)
+- Code Institute staff and tutors who taught me and helped with debugging issues
+- My mentor for helping plan, check in and reviewing the project once complete
+- All text content on the site was written by the developer
 
 <h3>Future features </h3>
     - Currently the club staff have no way to access the enquiries unless given permission by the admin/superuser. I would like to add an "inbox" page that displays the enquiries in a front-end page so that staff do not need to access the admin panel.
