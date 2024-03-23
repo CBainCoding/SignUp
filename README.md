@@ -13,6 +13,11 @@ The database model below shows the relation between the different models used in
 
 ![database_model](static/media/readme_images/DatabaseModel.png)
 
+<h3>Agile methodology</h3>
+
+User stories were created and tracked through github projects linked to this repo. [Click here](https://github.com/users/CBainCoding/projects/8)
+Indivual tasks were handled with a kanban board on Trello. [Click here](https://trello.com/b/5C1bKULo/capstone-project)
+
 <h3>Technologies used</h3>
 
 - __Languages__
