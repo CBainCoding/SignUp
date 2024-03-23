@@ -17,7 +17,7 @@ Please click [here]() to view the live site deployed on Heroku.
         - Django is used for the back-end structuring the project and because of the features it offers "out of the box" such as the user login and admin panel
         - Bootstrap is used for simplifying CSS styling allowing for much less CSS code in the stylesheet
 
-    - JavaScript file exists but currently only performs a simply "Hello world" print to check the JavaScript file is wired up correctly. During the project it became apparent that Python and Django were able to offer the same functionality but much more efficiently.
+- JavaScript file exists but currently only performs a simply "Hello world" print to check the JavaScript file is wired up correctly. During the project it became apparent that Python and Django were able to offer the same functionality but much more efficiently.
 
 <h3>List of features</h3>
 
