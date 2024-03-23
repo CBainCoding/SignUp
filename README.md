@@ -105,7 +105,16 @@ All site pages and forms have been tested on multiple devices from large desktop
 
 <h3>Deployment</h3>
 
-
+Check settings file to ensure your database is selected and you have included both your developer environment and heroku in the "Allowed hosts" section.
+Check settings file debug mode. Currently the debug is set to be an "if" statement based on "DEBUG" being present in the env.py file, this should turn debug mode on when in your developer environment but automatically switch off when site is deployed.
+Push site code to github ensuring env.py files etc. are included in .gitignore file.
+Link heroku account to github account.
+From heroku homepage select "New" and then "Create new app".
+Name the app and select relevant region.
+Open the new app and navigate to the settings tab.
+You will need to add any config_vars such as database URL (DB_URL) and cloud storage.
+Navigate to the "Deploy" tab and scroll to the bottom, select the github branch you wish to deploy from and select "Deploy Branch".
+This may take a few minutes to deploy, when complete click the "Open app" button to view your live site.
 
 <h3>Citation of ALL sources(code, images, text)</h3>
 
