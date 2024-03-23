@@ -9,7 +9,7 @@ body {
     left: 0;
     width: 100vw; /* Cover the full viewport width */
     height: 100vh; /* Cover the full viewport height */
-    background-image: url('../media/backgroundimage.jpg');
+    background-image: url('../media/backgroundimage.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
