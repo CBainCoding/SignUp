@@ -16,7 +16,8 @@ The database model below shows the relation between the different models used in
 <h3>Agile methodology</h3>
 
 User stories were created and tracked through github projects linked to this repo. [Click here](https://github.com/users/CBainCoding/projects/8)
-Indivual tasks were handled with a kanban board on Trello. [Click here](https://trello.com/b/5C1bKULo/capstone-project)
+</br>
+Individual tasks were handled with a kanban board on Trello. [Click here](https://trello.com/b/5C1bKULo/capstone-project)
 
 <h3>Technologies used</h3>
 
@@ -25,10 +26,10 @@ Indivual tasks were handled with a kanban board on Trello. [Click here](https://
 
 - __Frameworks__
     - The site uses Django and Bootstrap. 
-        - Django is used for the back-end structuring the project and because of the features it offers "out of the box" such as the user login and admin panel
+        - Django is used for the back-end structuring of the project and because of the features it offers "out of the box" such as the user login and admin panel
         - Bootstrap is used for simplifying CSS styling allowing for much less CSS code in the stylesheet
 
-- JavaScript file exists but currently only performs a simply "Hello world" print to check the JavaScript file is wired up correctly. During the project it became apparent that Python and Django were able to offer the same functionality but much more efficiently.
+- JavaScript file exists but currently only performs a simply "Hello world" console log to check the JavaScript file is wired up correctly. During the project it became apparent that Python and Django were able to offer the same functionality that JavaScript could, but much more efficiently.
 
 <h3>List of features</h3>
 
@@ -38,12 +39,16 @@ Indivual tasks were handled with a kanban board on Trello. [Click here](https://
     - The Navbar is part of the base.html file and as all other html files extend this base.html, the Navbar remains consistent across the site.
     - On smaller devices the Navbar collapses and can be opened with the burger icon and continues the difference in links shows depending on whether the user is logged in
     </br>
-![Navbar](static/media/readme_images/Navbar.png)
+![Navbar](static/media/readme_images/Navbar.png) </br>
+Navbar when not logged in
 </br>
-![NavbarLoggedIn](static/media/readme_images/NavbarLoggedIn.png)
+![NavbarLoggedIn](static/media/readme_images/NavbarLoggedIn.png) </br>
+Navbar changes to show more options when logged in
 </br>
 ![Navbar_Collapsed](static/media/readme_images/NavbarCollapsed.png)
 ![Navbar_Collapsed](static/media/readme_images/NavbarCollapsedLoggedIn.png)
+</br>
+On smaller screns the navbar collapses and is opened with a burger icon, again the buttons shown change depending on if user is logged in
 
 - __FAQs__
     - The FAQs page allows users to see commonly asked questions about the club without the need to bother the club officers.
@@ -53,6 +58,9 @@ Indivual tasks were handled with a kanban board on Trello. [Click here](https://
     </br>
 ![FAQs_Page](static/media/readme_images/FAQs_page.png)
 ![Staff_FAQs](static/media/readme_images/Staff_FAQs.png)
+</br>
+Staff can see additional options in the front-end to add, edit and delete FAQs
+</br>
 ![FAQs_Messages](static/media/readme_images/Edit_FAQ_Message.png)
 ![Delete_FAQ_Confirm](static/media/readme_images/Delete_FAQ_confirmation.png)
 
@@ -97,7 +105,7 @@ All pages forms have been tested and create relevent instances in the back-end. 
 
 All html pages have been run through the official [W3C validator](https://validator.w3.org/). This was done by right clicking on each page and viewing source, then pasting into the validator. All pages have been tested both not logged in and logged in. For pages such as the FAQs where staff can see additional features, an additional test was performed with a staff account logged in.
 
-Lighthouse tests have been performed across the site and results are over 90 for each score.
+Lighthouse tests have been performed across the site and results are at least 90 for each score.
 </br>
 ![Lighthouse_Results](static/media/readme_images/Lighthouse.png)
 
@@ -112,7 +120,7 @@ CSS stylesheet has passed the official [Jigsaw CSS validator](https://jigsaw.w3.
 
 All modified .py files have been run through the [Code Institute linter](https://pep8ci.herokuapp.com/). A lot of the code did not confirm to PEP8 standards so was reformatted correctly to meet these requirements and now passes with no errors.
 
-All site pages and forms have been tested on multiple devices from large desktop monitors to mobile phones. The pages and forms aldisplay correctly. Styling could be improved on some forms such as the enquiry form but this was pushed to a "Should do" requirement as the current styling meets MVP requirements.
+All site pages and forms have been tested on multiple devices from large desktop monitors to mobile phones. The pages and forms all display correctly. Styling could be improved on some forms such as the enquiry form but this was pushed to a "Should do" requirement as the current styling meets MVP requirements.
 
 <h3>Deployment</h3>
 
@@ -129,20 +137,22 @@ This may take a few minutes to deploy, when complete click the "Open app" button
 
 <h3>Citation of ALL sources(code, images, text)</h3>
 
-FreeCodeCamp's [Python Tutorial for Beginners](https://www.youtube.com/watch?v=ZxMB6Njs3ck)
-Chat GPT - General assistance with debugging and structuring code
-Django Documentation - General assistance
-W3 Schools - General help with structuring code and debugging
-Bootstrap Documentation
-geograph.org and Peter Trimming for [background image](https://www.geograph.org.uk/photo/1983853)
-Code Institute staff and tutors who taught me and helped with debugging issues
-My mentor for helping plan, check in and reviewing the project once complete
-All text content on the site was written by the developer
+- FreeCodeCamp's [Python Tutorial for Beginners](https://www.youtube.com/watch?v=ZxMB6Njs3ck)
+- Chat GPT - General assistance with debugging and structuring code
+- Django Documentation - General assistance
+- W3 Schools - General help with structuring code and debugging
+- Bootstrap Documentation
+- geograph.org and Peter Trimming for [background image](https://www.geograph.org.uk/photo/1983853)
+- Code Institute staff and tutors who taught me and helped with debugging issues
+- My mentor for helping plan, check in and reviewing the project once complete
+- All text content on the site was written by the developer
 
 <h3>Future features </h3>
-    - Currently the club staff have no way to access the enquiries unless given permission by the admin/superuser. I would like to add an "inbox" page that displays the enquiries in a front-end page so that staff do not need to access the admin panel.
-    - Similar to the enquiries, I intend to add a "Member details" page which allows staff to see a list of members and their details, if possible also export these details in a CSV file as the intention is that they can then be submitted to the national governing body to register the club members.
+
+- Currently the club staff have no way to access the enquiries unless given permission by the admin/superuser. I would like to add an "inbox" page that displays the enquiries in a front-end page so that staff do not need to access the admin panel.
+- Similar to the enquiries, I intend to add a "Member details" page which allows staff to see a list of members and their details, if possible also export these details in a CSV file as the intention is that they can then be submitted to the national governing body to register the club members.
 
 <h3>Known Bugs</h3>
-Delete FAQ message not showing when a user deletes from the front-end. For some reason while the messages work when creating and editing the FAQs page, the delete message does not show.
-Same email address is allowed on multiple accounts when signing up. This can be solved but was left as it is for users signing up as some club members may sign themselves and their children up on different accounts
+
+- Delete FAQ/account message sometimes not showing when a user deletes from the front-end. For some reason while the messages work when creating and editing, the delete message does not show.
+- Same email address is allowed on multiple accounts when signing up. This can be solved but was left as it is for users signing up as some club members may sign themselves and their children up on different accounts
